@@ -1,4 +1,4 @@
 public interface Manager {
 
-    void manage(Human human);
+    void manage(HumanWorker human);
 }
