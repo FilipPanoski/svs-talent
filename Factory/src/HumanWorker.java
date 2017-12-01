@@ -1,4 +1,4 @@
-public class HumanWorker implements Human {
+public class HumanWorker implements Worker, Eater {
 
     @Override
     public void work() {
