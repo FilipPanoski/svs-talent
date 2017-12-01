@@ -1,4 +1,4 @@
-public class RobotWorker implements Robot {
+public class RobotWorker implements Worker {
 
     @Override
     public void work() {
