@@ -1,4 +1,4 @@
-public interface Robot {
+public interface Worker {
 
     void work();
 
