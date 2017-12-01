@@ -1,4 +1,4 @@
 public interface RobotOperator {
 
-    void run(Robot robot);
+    void run(Worker robot);
 }
