@@ -10,6 +10,29 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>application</artifactId>
+         
+         <dependencies>
+        <dependency>
+            <groupId>com.seavus.electricalsystem</groupId>
+            <artifactId>fan</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.seavus.electricalsystem</groupId>
+            <artifactId>lamp</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.seavus.electricalsystem</groupId>
+            <artifactId>powerbutton</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.seavus.electricalsystem</groupId>
+            <artifactId>adapters</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 
 </project>
