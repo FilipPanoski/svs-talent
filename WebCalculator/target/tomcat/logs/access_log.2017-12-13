@@ -1,0 +1,15 @@
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:19:29 +0100] "GET /index.html HTTP/1.1" 200 484 http-bio-8080-exec-1 53
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:19:35 +0100] "GET /index HTTP/1.1" 404 961 http-bio-8080-exec-2 15
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:19:38 +0100] "GET /index.html HTTP/1.1" 304 - http-bio-8080-exec-3 102
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:19:45 +0100] "POST /calculate HTTP/1.1" 200 3 http-bio-8080-exec-4 5
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:20:04 +0100] "POST /calculate HTTP/1.1" 200 3 http-bio-8080-exec-5 0
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:20:08 +0100] "POST /calculate HTTP/1.1" 200 4 http-bio-8080-exec-6 0
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:20:14 +0100] "POST /calculate HTTP/1.1" 200 23 http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:20:19 +0100] "POST /calculate HTTP/1.1" 200 4 http-bio-8080-exec-8 0
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:23:12 +0100] "GET /index.html HTTP/1.1" 304 - http-bio-8080-exec-1 53
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:23:14 +0100] "POST /calculate HTTP/1.1" 200 20 http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:37:03 +0100] "GET /index.html HTTP/1.1" 304 - http-bio-8080-exec-1 53
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:37:05 +0100] "POST /calculate HTTP/1.1" 200 20 http-bio-8080-exec-2 31
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:37:13 +0100] "POST /calculate HTTP/1.1" 200 3 http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:37:17 +0100] "POST /calculate HTTP/1.1" 200 20 http-bio-8080-exec-4 1
+0:0:0:0:0:0:0:1 - - [13/Dec/2017:14:37:26 +0100] "POST /calculate HTTP/1.1" 200 4 http-bio-8080-exec-5 0
