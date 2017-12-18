@@ -1,0 +1,12 @@
+<h2>You are about to connect with the world like never before!</h2>
+
+<fieldset>
+    <legend>Sign up</legend>
+    Email:
+    <br>
+    <input type="email" name="email" [(ngModel)]="email">
+    <br>
+    <button type="button" (click)="signupUser()">Sign up</button>
+</fieldset>
+
+<p *ngIf = "signupSucess">Sign up was sucessful..</p>
