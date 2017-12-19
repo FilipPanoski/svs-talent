@@ -12,16 +12,28 @@ export class SignupComponent implements OnInit {
   constructor(private signupService: SignupService, private router: Router) { }
 
   email: string;
-  errors: any;
+  response: Boolean = false;
   signupSucess = false;
+  signupFail = false;
+  signupMessage: string;
 
   ngOnInit() {
   }
 
   signupUser() {
-    this.signupService.signupUser(this.email).subscribe(error => this.errors = error);
-    this.signupSucess = true;
-    setTimeout(() => this.router.navigate(['']), 2000);
+    this.signupService.signupUser(this.email)
+    .subscribe(data => {
+       this.response = data;
+       if (this.response === true) {
+      console.log('true');
+      this.signupSucess = true;
+      this.signupFail = false;
+      this.signupMessage = 'You successfully signed up...';
+      setTimeout(() => this.router.navigate(['']), 2000);
+    } else {
+      console.log('false');
+      this.signupFail = true;
+      this.signupMessage = 'That account already exists! Try another one or log in.';
+    } } );
   }
-
 }

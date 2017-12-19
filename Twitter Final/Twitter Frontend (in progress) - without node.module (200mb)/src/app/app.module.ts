@@ -12,13 +12,18 @@ import { SignupComponent } from './signup/signup.component';
 
 import { SignupService } from './signup.service';
 import { LoginService } from './login.service';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { UsersService } from './users.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    HomeComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,12 +31,14 @@ import { LoginService } from './login.service';
     HttpModule,
     RouterModule.forRoot([
       {path: '', component: LoginComponent},
-      {path: 'signup', component: SignupComponent}
+      {path: 'signup', component: SignupComponent},
+      {path: 'home', component: HomeComponent}
     ])
   ],
   providers: [
     SignupService,
-    LoginService
+    LoginService,
+    UsersService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,28 @@
+ul {
+    list-style-type: none;
+    display: inline;
+}
+
+li {
+    display: inline;
+    position: relative;
+    left: 500px;
+    margin-left: 100px;
+}
+
+h2 {
+    display: inline;
+    vertical-align: middle;
+    color: gray;
+}
+
+a {
+    font-size: 25px;
+    text-decoration: none;
+    color: green;
+}
+
+header {
+    background-color: lightblue;
+    height: 35px;
+}

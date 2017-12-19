@@ -3,7 +3,9 @@
 <fieldset>
    <legend>Sign in</legend>
     Email: <br>
-    <input type="email" name="email" [(ngModel)]="email"> <br>
+    <input type="email" name="email" [(ngModel)]="email">
+    <span *ngIf != "response">Invalid email!</span>
+    <span *ngIf = "invalidAccount">{{invalidAccountMessage}}</span> <br>
     <button type="button" (click) = loginUser()>Log in</button>
 </fieldset>
 

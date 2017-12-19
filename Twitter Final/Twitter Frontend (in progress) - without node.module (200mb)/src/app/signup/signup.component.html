@@ -9,4 +9,5 @@
     <button type="button" (click)="signupUser()">Sign up</button>
 </fieldset>
 
-<p *ngIf = "signupSucess">Sign up was sucessful..</p>
+<p *ngIf = "signupSucess">{{signupMessage}}</p>
+<p *ngIf = "signupFail">{{signupMessage}}</p>

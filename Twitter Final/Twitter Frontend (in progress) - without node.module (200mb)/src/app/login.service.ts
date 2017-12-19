@@ -11,12 +11,13 @@ export class LoginService {
 
   constructor(private http: Http) { }
 
-  url = 'https://localhost:8080/login';
+  url = 'http://localhost:8080/login';
 
   loginUser(email: string) {
-    return this.http.get(this.url, email)
+     return this.http.get(this.url + '/?email=' + email)
       .map((res: Response) => res.json())
       .catch((error: Response) => {
+        console.log('is working');
         return Observable.throw(error);
       });
   }
